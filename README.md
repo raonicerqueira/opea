@@ -45,6 +45,8 @@ O projeto utiliza os seguintes recursos:
 
 - **Axios**
 
+- **Framer-Motion**
+
 ## Estrutura do Projeto
 
 A estrutura do projeto é organizada da seguinte maneira:
