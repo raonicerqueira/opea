@@ -1,0 +1,65 @@
+@use "../../styles/variables";
+
+#client-container {
+  width: 92%;
+  height: 3.5rem;
+  margin-top: 1.13rem;
+  margin-left: 4%;
+  flex-shrink: 0;
+  border-radius: 2.1875rem 0.25rem 0.25rem 2.1875rem;
+  border: none;
+  background-color: variables.$color-background-secondary;
+  color: variables.$text-color-basic;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: variables.$color-background-primary;
+  }
+
+  #icon-client {
+    margin-right: 1.5rem;
+  }
+
+  #name {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  #information {
+    display: flex;
+    gap: 0.38rem;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    #cnpj {
+      font-size: 0.8125rem;
+      line-height: 1.125rem;
+    }
+
+    #email {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+
+    #email-responsive {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      display: none;
+      @media (max-width: 500px) {
+        display: block;
+      }
+    }
+  }
+}

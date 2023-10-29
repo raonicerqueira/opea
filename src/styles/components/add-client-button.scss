@@ -1,0 +1,32 @@
+@use "../../styles/variables";
+
+#add-client-button {
+  width: 92%;
+  height: 3.5rem;
+  margin-top: 1.13rem;
+  margin-left: 4%;
+  flex-shrink: 0;
+  border-radius: 2.1875rem 0.25rem 0.25rem 2.1875rem;
+  border: 1px solid variables.$color-stroke;
+  font-family: variables.$color-background-primary;
+  color: variables.$text-color-disabled;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.875rem;
+  letter-spacing: 0.07813rem;
+  padding: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 200ms;
+
+  &:hover {
+    opacity: 1;
+    color: variables.$text-color-basic;
+  }
+}

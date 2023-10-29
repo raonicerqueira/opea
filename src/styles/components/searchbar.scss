@@ -1,0 +1,40 @@
+@use "../../styles/variables";
+
+#search-bar-container {
+  padding: 0 4%;
+  display: flex;
+  justify-content: end;
+
+  #search-bar {
+    display: flex;
+    align-items: center;
+    height: 1.75rem;
+    flex-shrink: 0;
+    border-radius: 0.25rem;
+    border: 1px solid variables.$color-stroke;
+    background: variables.$color-background-secondary;
+    padding: 0.38rem 0.39rem 0.38rem 0.89rem;
+    margin-top: 2rem;
+
+    width: 17.5625rem;
+    height: 1.75rem;
+  }
+
+  input {
+    border: none;
+    width: 100%;
+    padding-right: 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: variables.$text-color-basic;
+      font-family: variables.$font-primary;
+      font-size: 0.875rem;
+      line-height: 1rem;
+      letter-spacing: 0.00938rem;
+    }
+  }
+}
