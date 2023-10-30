@@ -35,9 +35,9 @@ export default function ClientsList() {
           .filter((client) => {
             return search.toLowerCase() === ""
               ? client
-              : client.name.toLowerCase().includes(search) ||
-                  client.email.toLowerCase().includes(search) ||
-                  client.cnpj.toLowerCase().includes(search);
+              : client.name.toLowerCase().includes(search.toLowerCase()) ||
+                  client.email.toLowerCase().includes(search.toLowerCase()) ||
+                  client.cnpj.toLowerCase().startsWith(search);
           })
           .map((client, index) => (
             <motion.div
